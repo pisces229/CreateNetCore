@@ -25,12 +25,12 @@ dotnet add reference ../ProjectName/ProjectName.csproj
 ## Debug
 ```bash
 dotnet run --configuration Debug
-
-dotnet ./{Project}/bin/Debug/{Project}.exe --configuration Debug
-
-dotnet run --configuration Debug
 dotnet run --configuration Debug --launch-profile {profile-name}
 dotnet run --launch-profile {profile-name}
+
+dotnet ./{Project}/bin/Debug/{Project}.exe --configuration Debug
+dotnet ./{Project}/bin/Debug/{Project}.exe --configuration Debug --launch-profile {profile-name}
+dotnet ./{Project}/bin/Debug/{Project}.exe --launch-profile {profile-name}
 ```
 
 ## Test
