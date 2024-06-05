@@ -9,18 +9,28 @@
 > 
 
 ## Create
-> dotnet new -l <br>
-> dotnet new web --help <br>
-> dotnet new web -f netcoreapp3.1 <br>
-> dotnet new console --help <br>
-> dotnet new console -f netcoreapp3.1 <br>
-> dotnet new classlib --help <br>
-> dotnet new classlib -f netcoreapp3.1 <br>
-> dotnet new nunit --help <br>
-> dotnet new nunit -f netcoreapp3.1 <br>
-> dotnet add reference ../ProjectName/ProjectName.csproj <br>
->
+```bash
+dotnet new -l 
+dotnet new web --help 
+dotnet new web -f netcoreapp3.1 
+dotnet new console --help 
+dotnet new console -f netcoreapp3.1 
+dotnet new classlib --help 
+dotnet new classlib -f netcoreapp3.1 
+dotnet new nunit --help 
+dotnet new nunit -f netcoreapp3.1 
+dotnet add reference ../ProjectName/ProjectName.csproj 
+```
+
+## Debug
+```bash
+dotnet run --configuration Debug
+
+dotnet ./{Project}/bin/Debug/{Project}.exe --configuration Debug
+
+dotnet run --configuration Debug --launch-profile {profile-name}
+```
 
 ## Test
 > settings.json add "dotnet-test-explorer.testProjectPath": "Test*"
-> 
+
