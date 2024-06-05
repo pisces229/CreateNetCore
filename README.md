@@ -28,7 +28,9 @@ dotnet run --configuration Debug
 
 dotnet ./{Project}/bin/Debug/{Project}.exe --configuration Debug
 
+dotnet run --configuration Debug
 dotnet run --configuration Debug --launch-profile {profile-name}
+dotnet run --launch-profile {profile-name}
 ```
 
 ## Test
